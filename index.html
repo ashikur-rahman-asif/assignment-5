@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <br>
+    <!-- Image and product details -->
+    <div class="container">
+        <div class="main">
+            <div class="left"><img src="./images/mac.png" alt=""></div>
+            <div class="right">
+                <div class="top">
+                    <h1>Customize your Blue24-inch <br> i-Mac with Apple M1 chip.</h1>
+                    <p class="shortDesc">Apple M1 chip 8-core CPU with 4 performance cores and 4 efficiency cores,7-core
+                        GPU and 16-core NeuralNeural engine 8GB unified memory 256GB SSD storage Two thunderbolt.</p>
+                </div>
+                <!-- Memory Option -->
+                <div class="middle">
+                    <div class="singleCriteria">
+                        <h2>Memory</h2>
+                        <button class="btn" id="memory8gbBtn">8GB unified memory</button>
+                        <button class="btn" id="memory16gbBtn">16GB unified memory</button>
+                    </div>
+                    <!-- Storage Option -->
+                    <div class="singleCriteria">
+                        <h2>Storage</h2>
+                        <button class="btn" id="storage256gbBtn">256GB SSD Storage</button>
+                        <button class="btn" id="storage512gbBtn">512GB SSD Storage</button>
+                        <button class="btn" id="storage1tbBtn">1TB SSD Storage</button>
+                    </div>
+                    <!-- Delivery option -->
+                    <div class="singleCriteria">
+                        <h2>Choose your delivery option</h2>
+                        <button class="btn" id="deliveryBtnFree">Friday,AUG 25 FREE Prime Delivery</button>
+                        <button class="btn" id="deliveryBtn20">Friday,AUG 21 Delivery charge $20</button>
+                    </div>
+                </div>
+                <!-- Price Show -->
+                <div class="priceDisplay">
+                    <div class="line">
+                        <div class="left">Best price</div>
+                        <div class="right">$ <span id="constPriceEl">1299</span></div>
+                    </div>
+                    <div class="line">
+                        <div class="left">Extra Memory cost</div>
+                        <div class="right">$ <span id="extraMemorycostEl">0</span></div>
+                    </div>
+                    <div class="line">
+                        <div class="left">Extra Storage cost </div>
+                        <div class="right">$ <span id="extraStoragecostEl">0</span></div>
+                    </div>
+                    <div class="line borderDark">
+                        <div class="left">Delivery charge</div>
+                        <div class="right">$ <span id="deliverychargeEl">0</span></div>
+                    </div>
+                    <!-- Total Price -->
+                    <div class="line">
+                        <div class="left">Total price</div>
+                        <div class="right">$ <span id="totalPriceEl">1299</span></div>
+                    </div>
+                </div>
+                <br>
+                <!-- Promo code -->
+                <div class="formArea">
+                    <h4>Add promo code</h4>
+                    <div class="field">
+                        <input type="text" id="promoInput" placeholder="Enter your promo code">
+                        <button id="promoBtn">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr class="opacity-50">
+        <!-- Final amount -->
+        <h1 class="lastTotal">Total: $<span id="lastTotalEl">1299</span></h1>
+    </div>
+    <br>
+
+    <script src="./Javascript/main.js"></script>
+</body>
+
+</html>

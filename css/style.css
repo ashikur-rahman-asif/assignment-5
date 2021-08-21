@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.opacity-50 {
+  opacity: .3;
+}
+
+.lastTotal {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  outline: none;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  cursor: pointer;
+  margin-right: 5px;
+  color: black;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .left {
+  width: 40%;
+}
+
+.main .left img {
+  width: 100%;
+}
+
+.main .right {
+  width: 55%;
+}
+
+.main .right .top {
+  margin-bottom: 50px;
+}
+
+.main .right .top h1 {
+  margin-bottom: 10px;
+}
+
+.main .right .top .shortDesc {
+  width: 70%;
+  text-align: justify;
+}
+
+.main .right .middle .singleCriteria {
+  margin-bottom: 40px;
+}
+
+.main .right .priceDisplay {
+  width: 50%;
+  font-weight: 700;
+}
+
+.main .right .priceDisplay .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main .right .priceDisplay .line.borderDark {
+  border-bottom: 1px solid black;
+}
+
+.main .right .priceDisplay .line .left {
+  width: 70%;
+}
+
+.main .right .formArea .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .right .formArea .field input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin-right: 3px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.main .right .formArea .field input:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.main .right .formArea .field button {
+  padding: 0 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgba(207, 38, 38, 0.87);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.main .right .formArea .field button:hover {
+  background-color:red;
+}
