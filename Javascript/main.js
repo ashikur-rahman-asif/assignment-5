@@ -38,18 +38,21 @@ document.getElementById('deliveryBtn20').addEventListener('click', function () {
 //promo 
 
 document.getElementById('promoBtn').addEventListener('click', function () {
-    const promoCode = document.getElementById('promoInput').value;
+    let promoCode = document.getElementById('promoInput').value;
     if (!isPromoCodeApplied) {
         if (promoCode == 'stevekaku') {
             const totalPrice = parseInt(document.getElementById('totalPriceEl').innerText);
             const newTotalPrice = totalPrice - totalPrice * .2;
             document.getElementById('lastTotalEl').innerText = newTotalPrice;
             isPromoCodeApplied = true
+            document.getElementById('promoInput').value = ''
         } else {
             alert("Wrong Promocode!!!!!!!");
+            document.getElementById('promoInput').value = ''
         }
     }else{
         alert("Promocode is already applied!!!!!!!")
+        document.getElementById('promoInput').value = ''
     }
 
 })
